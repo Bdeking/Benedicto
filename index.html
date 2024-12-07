@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hi, My Name is Benedicto Dekingo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to My World</h2>
+            <p>Where creativity meets design excellence. Explore my work and see how I transform ideas into reality.</p>
+            <a href="#" class="cta-button">Discover More</a>
+        </section>
+        <section id="featured-projects">
+            <h3>Featured Projects</h3>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D12AQEAUfhBSKh_Ug/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1534413722959?e=2147483647&v=beta&t=Fy41IDiHASg14PvJ9g9ob6sidKbjlxLdY1PAbBFSAu0">
+                    <p>Amazing design for modern needs.</p>
+                </div>
+                <div class="project">
+                    <img src="https://images01.nicepagecdn.com/page/48/82/html-template-488288.jpg?version=6b5cb02b-06aa-4062-bb7d-a71ae182af7b">
+                    <p>Innovative and user-friendly design.</p>
+                </div>
+                <div class="project">
+                    <img src="https://www.hostgator.com/blog/wp-content/smush-webp/2018/06/color-block-web-design-1024x682.png.webp">
+                    <p>Creative solutions for every idea.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Design Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script type="module">
+        import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+      
+        const widget = await Chatbox.initBubble({
+          agentId: 'cm4drlwap00vbppjjddpwfccx',
+          
+          // optional 
+          // If provided will create a contact for the user and link it to the conversation
+          contact: {
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'customer@email.com',
+            phoneNumber: '+33612345644',
+            userId: '42424242',
+          },
+          // optional
+          // Override initial messages
+          initialMessages: [
+            'Hello Georges how are you doing today?',
+            'How can I help you ?',
+          ],
+          // optional
+          // Provided context will be appended to the Agent system prompt
+          context: "The user you are talking to is John. Start by Greeting him by his name.",
+        });
+      
+        // open the chat bubble
+        widget.open();
+      
+        // close the chat bubble
+        widget.close()
+      
+        // or 
+        widget.toggle()
+      </script>
+</body>
+</html>
